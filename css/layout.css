@@ -192,7 +192,7 @@ ul#nav li a:after {
    content: '';
    border-bottom: 2px solid #00ce7b;
    transform: scaleX(0);
-   transition: transform 350ms ease-in-out;
+   transition: transform 500ms ease-in-out;
 }
 
 ul#nav li a:hover:after {
