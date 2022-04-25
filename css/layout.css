@@ -4,7 +4,7 @@ body {
 
 header {
    position: relative;
-   height: 800px;
+   height: 100vh;
    min-height: 500px;
    width: 100%;
    background: #2c2d44 url(../images/header-background.png) no-repeat top center;
@@ -106,9 +106,9 @@ header .scrolldown a {
    transition: all .3s ease-in-out;
 }
 
-header .scrolldown a:hover {
+/* header .scrolldown a:hover {
    color: #11ABB0;
-}
+} */
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -123,7 +123,6 @@ header .scrolldown a:hover {
 
 /* nav-wrap */
 #nav-wrap {
-   font: 12px 'opensans-bold', sans-serif;
    width: 100%;
    text-transform: uppercase;
    letter-spacing: 2.5px;
@@ -154,18 +153,15 @@ ul#nav {
 ul#nav li {
    position: relative;
    list-style: none;
-   height: 48px;
+   height: 60px;
    display: inline-block;
 }
 
 /* Links */
 ul#nav li a {
-
-   /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
-
    display: inline-block;
-   padding: 8px 13px;
-   line-height: 32px;
+   margin: 15px 10px;
+   line-height: 20px;
    text-decoration: none;
    text-align: left;
    color: #fff;
@@ -182,9 +178,30 @@ ul#nav li a:active {
 }
 
 ul#nav li.current a {
-   color: #F06000;
+   color: #00ce7b;
+   border-bottom: 2px solid #00ce7b;
 }
 
+ul#nav li.current a:hover:after {
+   transform: scaleX(0);
+   padding-bottom: 0px;
+}
+
+ul#nav li a:after {
+   display: block;
+   content: '';
+   border-bottom: 2px solid #00ce7b;
+   transform: scaleX(0);
+   transition: transform 350ms ease-in-out;
+}
+
+ul#nav li a:hover:after {
+   transform: scaleX(1);
+}
+
+ul#nav li a:hover {
+   color: #00ce7b;
+}
 
 /* ------------------------------------------------------------------ */
 /* c. About Section

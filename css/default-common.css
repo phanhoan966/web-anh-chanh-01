@@ -1,0 +1,27 @@
+/* .current .animation-border-bottom {
+    color: #00ce7b;
+    border-bottom: 2px solid #00ce7b;
+}
+
+.current .animation-border-bottom:hover:after {
+    transform: scaleX(0);
+    padding-bottom: 0px;
+}
+
+.animation-border-bottom:after {
+    display: block;
+    content: '';
+    border-bottom: 2px solid #00ce7b;
+    transform: scaleX(0);
+    transition: transform 350ms ease-in-out;
+}
+
+.animation-border-bottom:hover:after {
+    color: #00ce7b;
+    transform: scaleX(1);
+    padding-bottom: 2px;
+}
+
+.animation-border-bottom:hover {
+    color: #00ce7b;
+} */
